@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Coca-Cola</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <a href="#"><img src="imagens/LOGO-COCA-COLA_cinza.jpg" class="logo"></a>
+                    <ul>
+                        <li><a href="#">Quem Somos</a></li>
+                        <li><a href="#">Nossos Produtos</a></li>
+                        <li><a href="#">Fornecedores</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+            </header>
+
+            <div class="content">
+                <div class="texto">
+                    <h2>Coca-Cola Sabor Original</h2>
+                        <p>Abrir uma Coca-Cola para muitos pessoas significa abrir um momento de felicidade.
+                            Igrendientes
+                                Àgua gaseificada, açucar, extrato de noz de cola, caféina,
+                                    corante carmelo IV, acidulante INS 338 e arona natural.
+
+                        </p>
+                        <a href="#">Comprar</a>
+                </div>
+                <div class="imagens">
+                    <img src="imagens/coca_preta.jpg" id="coca cola" alt="">
+                </div>
+            </div>
+            <div class="bebidas">
+                <a><img onclick="change(this);changeBgColor('#000000')" src="imagens/coca_preta.jpg" alt=""></a>
+                <a><img onclick="change(this);changeBgColor('#8A0808')" src="imagens/coca_normal.jpg" alt=""></a>
+                <a><img onclick="change(this);changeBgColor('#0A2A0A')" src="imagens/coca_verde.jpg" alt=""></a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var container = document.getElementById("coca cola");
+                function change(imagens){
+                    container.src = imagens.src;    
+                }
+
+                function changeBgColor(color){
+                    const container = document.querySelector('.container');
+                    container.style.background = color;
+                }
+        </script>
+    </body>
+</html>
